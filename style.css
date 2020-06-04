@@ -1,0 +1,32 @@
+body{
+    overflow-x: hidden;
+    height: 100%;
+    width: 100%;
+  background-color: rgba(8, 26, 105, 0.185);
+}
+#menu{
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 200px;
+   background-image: -moz-linear-gradient(left, rgba(49, 99, 49, 0.425), rgba(104, 224, 208, 0.438));
+    transform: translateX(200px);
+}
+#menu ul li{
+    list-style-type: none;
+}
+
+#menu p{
+    font-size: 1.3em;
+    list-style: none;
+}
+#menu_icon{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 99;
+    border: 2px solid black;
+    padding: 5px;
+    border-radius: 10px;
+}
