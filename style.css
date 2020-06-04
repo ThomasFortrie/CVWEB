@@ -30,3 +30,17 @@ body{
     padding: 5px;
     border-radius: 10px;
 }
+#photoProfil{
+    border-radius: 50%;
+    height: 25%;
+    width: auto;
+    border: 8px solid rgb(0, 92, 80);
+}
+.networkImg{
+    margin-left: 5%;
+}
+.networkImgDiv{
+    position: absolute;
+    bottom: 10px;
+    left: 10px;
+}

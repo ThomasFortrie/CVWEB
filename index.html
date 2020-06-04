@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,35 +10,61 @@
     <link rel="stylesheet" href="style.css">
     <script src="JS/jquery-3.4.1.js"></script>
     <script src="JS/menu.js"></script>
+    <script src="JS/littlejs.js"></script>
     <title>Document</title>
 </head>
+
 <body id="body">
     <header>
-    <div id="menu_icon">
-        <img src="images/menu_ico.png" alt="">
+        <div id="menu_icon" class="clickDiv">
+            <img src="images/menu_ico.png" alt="">
+        </div>
+        <nav id="menu" class="navbar clickDiv">
+            <ul class="clickDiv">
+                <li>
+                    <p id="thomas">Thomas</p>
+                </li>
+                <li>
+                    <p id="technos">Technos</p>
+                </li>
+                <li>
+                    <p id="projets">Projets</p>
+                </li>
+                <li>
+                    <p id="contact">Contact</p>
+                </li>
+            </ul>
+        </nav>
+
+
+    </header>
+    <div class="container my-4">
+        <div class="row">
+            <div class="col-md-4">
+                <img id="photoProfil" src="images/me2.jpg" alt="Thomas Fortrie" title="Thomas Fortrie">
+
+            </div>
+            <div class="col-md-8">
+
+            </div>
+        </div>
+
+
     </div>
-    <nav id="menu" class="navbar">
-        <ul>
-            <li>
-                <p id="thomas">Thomas</p>
-            </li>
-            <li>
-                <p id="technos">Technos</p>
-            </li>
-            <li>
-                <p id="projets">Projets</p>
-            </li>
-            <li>
-                <p id="contact">Contact</p>
-            </li>
-        </ul>
-    </nav>
-    test
 
-    <img src="images/meTF.jpg" alt="Thomas Fortrie" title="Thomas Fortrie">
+    <footer>
+        <div class="networkImgDiv">
+            <div>
+                <img class="networkImg md-4" src="images/facebook.png" alt="Thomas Fortrie Facebook Profil"
+                    title="Thomas Fortrie Facebook Profil">
+                <img class="networkImg md-4" src="images/linkedin-logo.png" alt="Thomas Fortrie Linkedin Profil"
+                    title="Thomas Fortrie Likedin Profil">
+            </div>
+        </div>
 
-</header>
-<div ></div>
-    
+
+    </footer>
+
 </body>
+
 </html>
