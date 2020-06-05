@@ -1,8 +1,12 @@
+.realBody{
+    background-color: rgba(8, 26, 105, 0.185);
+
+}
+
 body{
     overflow-x: hidden;
     height: 100%;
     width: 100%;
-  background-color: rgba(8, 26, 105, 0.185);
 }
 #menu{
     position: absolute;
@@ -24,23 +28,32 @@ body{
 #menu_icon{
     position: absolute;
     top: 20px;
-    right: 20px;
+    right: 5px;
     z-index: 99;
     border: 2px solid black;
     padding: 5px;
     border-radius: 10px;
 }
+/* @media (max-width: 1250px){
+    #menu_icon{
+        right: 10px;
+    }
+} */
 #photoProfil{
     border-radius: 50%;
-    height: 25%;
+    height: 30%;
     width: auto;
-    border: 8px solid rgb(0, 92, 80);
+    border: 5px solid rgb(0, 92, 80);
+    margin: 5px;
 }
+
 .networkImg{
     margin-left: 5%;
+    display: inline-block;
 }
+/*
 .networkImgDiv{
     position: absolute;
     bottom: 10px;
     left: 10px;
-}
+} */
