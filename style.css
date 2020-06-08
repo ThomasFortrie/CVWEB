@@ -9,13 +9,13 @@ body{
     width: 100%;
 }
 #menu{
-    
+    z-index: 99;
     position: absolute;
     top: 0;
     right: 0px;
     height: 100%;
     width: 200px;
-   background-image: -moz-linear-gradient(left, rgba(49, 99, 49, 0.425), rgba(104, 224, 208, 0.438));
+   background-image: -moz-linear-gradient(left, rgba(149, 199, 149, 0.911), rgba(149, 229, 219, 0.918));
     transform: translateX(200px);
 }
 #menu ul li{
@@ -47,6 +47,15 @@ body{
     border: 5px solid rgb(0, 92, 80);
     margin: 5px;
 }
+@media (max-width: 800px){
+    #photoProfil{
+        border-radius: 50%;
+    height: 15%;
+    width: auto;
+    border: 2px solid rgb(0, 92, 80);
+    margin: 2px;
+    }
+}
 
 .networkImg{
     position: relative;
@@ -63,3 +72,7 @@ body{
     bottom: 10px;
     left: 10px;
 } */
+#main{
+    position: absolute;
+    top: 20%;
+}
