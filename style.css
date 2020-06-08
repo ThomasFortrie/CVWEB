@@ -29,7 +29,7 @@ body{
 #menu_icon{
     position: absolute;
     top: 10px;
-    right: 15px;
+    right: 25px;
     z-index: 99;
     border: 2px solid black;
     padding: 5px;
@@ -49,8 +49,13 @@ body{
 }
 
 .networkImg{
+    position: relative;
+    bottom: 10px;
     margin-left: 5%;
-    display: inline-block;
+    border-radius: 15px;
+    border: 1px solid black;
+    box-shadow: 2px 2px 5px black;
+    margin: 5px;
 }
 /*
 .networkImgDiv{

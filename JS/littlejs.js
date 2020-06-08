@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
-    arraySizes = getSizes();
-
+    arraySizes = setSizes();
+    
     window.onresize = function () {
-      arraySizes = getSizes();
+        arraySizes = setSizes();
     }
 
 
@@ -13,8 +13,8 @@ $(document).ready(function () {
 
     // applique les nouvelles tailles à la div principales
     function setSizes() {
-        var height = arraySizes["1"];
-        var width = arraySizes["2"];
+        var height = $(document).height();
+        var width = $(document).width();
         $(document).css({
             "height" : height,
             "width" : width
@@ -25,17 +25,7 @@ $(document).ready(function () {
         })
     }
 
-    // Récupère les valeurs tailles de la fenêtre
-    function getSizes() {
-
-        var theHeight = $(document).height();
-        var theWidth = $(document).width();
-        var array = {};
-        array = {
-            "1" : theHeight,
-                "2" : theWidth
-        };
-    }
+    
 
 
 })
