@@ -4,6 +4,7 @@ $(document).ready(function(){
         e.stopPropagation();
         e.preventDefault();
         $('#menu').fadeIn(500);
+        $('#menu_icon').fadeOut(500);
         // $('#menu').animate({right: '200px'});
     })
 
@@ -27,6 +28,7 @@ var $mouseOut = false;
 
         if ($mouseOut == true) {
             $('#menu').fadeOut(500);
+            $('#menu_icon').fadeIn(500);
             // $('#menu').animate({right: '-200px'});
 
         }
