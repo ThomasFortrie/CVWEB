@@ -3,7 +3,8 @@ $(document).ready(function(){
     $('#menu_icon').on('click',function(e){
         e.stopPropagation();
         e.preventDefault();
-        $('#menu').animate({right: '200px'});
+        $('#menu').fadeIn(500);
+        // $('#menu').animate({right: '200px'});
     })
 
     // $('#body').on('click', function(){
@@ -25,7 +26,8 @@ var $mouseOut = false;
         }
 
         if ($mouseOut == true) {
-            $('#menu').animate({right: '-200px'});
+            $('#menu').fadeOut(500);
+            // $('#menu').animate({right: '-200px'});
 
         }
 
