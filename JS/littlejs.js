@@ -1,9 +1,9 @@
 $(document).ready(function () {
 
-    arraySizes = setSizes();
-    
+    setSizes();
+
     window.onresize = function () {
-        arraySizes = setSizes();
+        setSizes();
     }
 
 
@@ -16,9 +16,9 @@ $(document).ready(function () {
         var height = $(window).height();
         var width = $(window).width();
         console.log(height + " " + width)
-        $(document).css({
-            "height" : height,
-            "width" : width
+        $('#realBody').css({
+            "min-height" : height,
+            "min-width" : width
         })
         $('#body').css({
             "height" : height,
