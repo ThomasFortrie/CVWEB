@@ -19,7 +19,7 @@ var $mouseOut = false;
     /* Pour fermer  SI LE CLIQUE A LIEU EN DEHORS DES 2 FENETRES DE CONNEXION*/
     $(document.body).on('click', function (e) {
         e.stopPropagation();
-        console.log(event.target.classList);
+        // console.log(event.target.classList);
         if (event.target.classList.contains("clickDiv")) {
             $mouseOut = false;
         } else {
