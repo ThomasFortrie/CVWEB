@@ -19,17 +19,18 @@ body{
     /* height: 20%; */
     padding: 10px;
     width: 200px;
-   background-color: rgba(233, 233, 233, 0.829);
+   /* background-color: rgba(233, 233, 233, 0.829);
    border: 2px solid black;
-   border-radius: 10px;
+   border-radius: 10px; */
    /* transform: translateX(200px); */
+   text-align: right;
 }
 #menu ul li{
     list-style-type: none;
     display: inline-block;
 }
 #menu ul li p{
-    
+    font-size: 1em;
 }
 
 #menu_icon{
