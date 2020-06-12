@@ -26,7 +26,8 @@ $(document).ready(function () {
             } else {
                 eraseChangeDiv();
                 // CHANGEMENT ET AFFICHAGE DE LA CHANGEDIV
-
+                var theTitle = $('<h2></h2>').html("Thomas Fortrie");
+                theTitle.appendTo($('#changeDiv'));
                 // <p>
                 
                 //         Thomas Fortrie <br>
@@ -48,6 +49,7 @@ $(document).ready(function () {
 
             } else {
                 eraseChangeDiv();
+                $('#changeDiv').addClass("technos");
                 // CHANGEMENT ET AFFICHAGE DE LA CHANGEDIV
             }
         }
@@ -92,6 +94,7 @@ $(document).ready(function () {
         setTimeout(function () {
             $('#changeDiv').empty();
         }, 500)
+        $('#changeDiv').removeClass()
     }
 
 
