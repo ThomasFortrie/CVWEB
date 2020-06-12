@@ -16,7 +16,7 @@ $(document).ready(function () {
     
     $(document.body).on('click', function (e) {
         e.stopPropagation();
-        e.preventDefault();
+        // e.preventDefault();
         // THOMAS
         if (event.target.classList.contains("thomas")) {
             console.log("test tom");
@@ -26,7 +26,17 @@ $(document).ready(function () {
             } else {
                 eraseChangeDiv();
                 // CHANGEMENT ET AFFICHAGE DE LA CHANGEDIV
+
+                // <p>
                 
+                //         Thomas Fortrie <br>
+                //         Web Developer Junior <br>
+                //         06 79 50 56 10 <br>
+                
+                //         "Devenir Professionnel du secteur, m'investir dans de beau projets et apprendre, apprendre toujours
+                //         plus..."
+                
+                //     </p>
             }
 
 
