@@ -9,43 +9,73 @@ $(document).ready(function () {
 
     $('#photoProfil').hover(function (e) {
 
-
-
+        
+        
     })
-
-
+    
+    
     $(document.body).on('click', function (e) {
         e.stopPropagation();
         e.preventDefault();
-
+        // THOMAS
         if (event.target.classList.contains("thomas")) {
             console.log("test tom");
-            eraseChangeDiv();
+            console.log(document.getElementById("changeDiv").classList);
+            if (document.getElementById("changeDiv").classList.contains("thomas")) {
+                console.log("contient Thomas")
+            } else {
+                eraseChangeDiv();
+                // CHANGEMENT ET AFFICHAGE DE LA CHANGEDIV
+                
+            }
+
 
         }
+        // TECHNOS
+        if (event.target.classList.contains("technos")) {
+            console.log("test techno");
+            if (document.getElementById("changeDiv").classList.contains("technos")) {
 
-        if (event.target.classList.contains("thomas")) {
-            eraseChangeDiv();
+            } else {
+                eraseChangeDiv();
+                // CHANGEMENT ET AFFICHAGE DE LA CHANGEDIV
+            }
         }
-
-        if (event.target.classList.contains("thomas")) {
-            eraseChangeDiv();
+        
+        // PROJETS
+        if (event.target.classList.contains("projets")) {
+            console.log("test projet");
+            if (document.getElementById("changeDiv").classList.contains("projets")) {
+                
+            } else {
+                eraseChangeDiv();
+                // CHANGEMENT ET AFFICHAGE DE LA CHANGEDIV
+                
+            }
         }
-
-        if (event.target.classList.contains("thomas")) {
-            eraseChangeDiv();
+        
+        // CONTACT
+        if (event.target.classList.contains("contact")) {
+            console.log("test contact");
+            if (document.getElementById("changeDiv").classList.contains("contact")) {
+                
+            } else {
+                eraseChangeDiv();
+                // CHANGEMENT ET AFFICHAGE DE LA CHANGEDIV
+                
+            }
         }
-
-
-
-
-
+        
+        
+        
+        
+        
     })
-
-
-
-
-
+    
+    
+    
+    
+    
     // Efface et vide la changeDiv
     function eraseChangeDiv() {
         $('#changeDiv').fadeOut(500);
@@ -53,21 +83,6 @@ $(document).ready(function () {
             $('#changeDiv').empty();
         }, 500)
     }
-
-
-    // Re-création et remplacement texte dans la div principale
-    // la variable text sert à remplir la div, et la variable classe sera l'attribut class de la div
-    function changeDivGo($text, $class) {
-        
-
-    }
-
-
-
-
-
-
-
 
 
     // applique les nouvelles tailles à la div principales
