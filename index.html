@@ -4,90 +4,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="shortcut icon" href="images/favicon_cvjs.ico" type="image/x-icon">
+    <title>Thomas Fortrie DevWeb</title>
     <link rel="stylesheet" href="bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
-    <script src="JS/jquery-3.4.1.js"></script>
-    <script src="JS/menu.js"></script>
-    <script src="JS/littlejs.js"></script>
-    <title>Document</title>
 </head>
 
 <body>
-    <div class="container-fluid realBody">
+    <div class="container">
+        <div class="jumbotron title">
+            <span class="badge badge-info">Région Lilloise</span>
+            <img id="profilPhoto" src="images/TomSmall.jpg" alt="">
+            <div class="row">
+                <h3>Thomas Fortrie
+                    <br>
+                    Développeur Web Jr. <br>
+                </h3>
 
-        <div class="row">
-            <div class="col-md-4">
-              <a href="https://thomasfortrie.github.io/CVWEB/">  <img id="photoProfil" src="images/me2.jpg" alt="Thomas Fortrie" title="Thomas Fortrie"></a>
+
+            </div>
+            <div class="row infos">
+                <a target="blanck" class="btnInfo btn btn-outline-dark" href="NewCvThomasFortrie.pdf">Mon CV à jour</a>
+                <a href="mailto:thomas.fortrie@live.fr" class="btnInfo btn btn-outline-info">Me contacter</a>
+                <a href="https://www.linkedin.com/in/thomas-fortrie/" class="btnInfo btn btn-outline-primary">Mon profil Linkedin</a>
 
             </div>
 
-            <div id="menu_icon" class="row clickDiv">
-                <img src="images/menu_ico.png" alt="">
-            </div>
-
-
-        </div>
-        <header>
-
-            <nav id="menu" class="navbar clickDiv">
-                <ul class="clickDiv">
-                    <li>
-                        <p class="btn btn-outline-info thomas" id="thomas">Thomas</p>
-                    </li><br>
-                    <li>
-                        <p class="btn btn-outline-info technos" id="technos">Technos</p>
-                    </li><br>
-                    <li>
-                        <p class="btn btn-outline-info projets" id="projets">Projets</p>
-                    </li><br>
-                    <li>
-                        <p class="btn btn-outline-info contact" id="contact">Contact</p>
-                    </li><br>
-                </ul>
-            </nav>
-
-
-        </header>
-
-        <div id="main" class="row">
-            <div class="col-md-2"></div>
-            <div class="col-md-10">
-                <div id="changeDiv" class="thomas">
-                    <p>
-                
-                        Thomas Fortrie <br>
-                        Web Developer Junior <br>
-                        06 79 50 56 10 <br>
-                
-                        "Devenir Professionnel du secteur, m'investir dans de beau projets et apprendre, apprendre toujours
-                        plus..."
-                
-                    </p>
+            <div class="row ">
+                <div class="col"></div>
+                <div class="texteOp alert alert-primary" role="alert">
+                    Je recherche actuellement ma première opportunité, l'entreprise qui me fera confiance. 
+                    
                 </div>
             </div>
-            
         </div>
 
+        <div class="technos jumbotron">
+            <h4>Mes Technos</h4>
+            <br>
+            <p>Les technologies que j'utilise et apprécie le plus.</p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">PHP (POO)</h5>
+                            <p class="card-text">Un language que j'apprécie, avec lequel j'ai commencé et je continue le
+                                développement Web.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Symfony</h5>
+                            <p class="card-text">J'apprécie particulièrement ce Framework et compte m'y investir encore
+                                plus en profondeur. <br></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">JavaScript / jQuery</h5>
+                            <p class="card-text">Un incontournable du web dynamique d'aujourd'hui. <br> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">WordPress</h5>
+                            <p class="card-text">Le CMS qui a conquit le Web</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">SQL - BDD mariaDB</h5>
+                            <p class="card-text"> <br> </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">ReactJS / Vue.JS / AngularJS</h5>
+                            <span class="badge badge-success">En cours</span>
+                            <p class="card-text">Je compte me former sur l'un des 3 grands Framework Front</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="jumbotron exp">
+            <h4>Expériences et Projets</h4>
+            <br>
+            <p>Voici quelques projets et travaux sur lesquels j'ai travaillé. Certains dans le cadre de mon stage,
+                d'autres dans un cadre personnel.</p>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Plugin WordpPress</h5>
+                            <span class="badge badge-danger">PHP</span>
+                            <span class="badge badge-warning">JS</span>
+                            <span class="badge badge-info">WordPress</span>
+                            <br>
+                            <small>Pour le site TacoTroc.com - Premier trimestre 2020</small>
+                            <p class="card-text">Lors de mon stage de fin de formation, j'ai développé un Plugin
+                                WordPress pour le site TacoTroc.com. Il s'agissait ici d'y inclure une gestion des
+                                membres,...
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Blog Symfony</h5>
+                            <span class="badge badge-danger">PHP</span>
+                            <span class="badge badge-dark">Symfony</span>
+                            <small>- 2020</small>
+                            <p class="card-text">Je développe et apprend actuellement à utiliser le Framework PHP
+                                Symfony. Pour ce faire
+                                je travaille sur un projet de blog
+                                <br>Retrouvez le répertoire du projet juste en dessous.</p>
+                            <a target="blanck" title="Visite d'imdb-api.com"
+                                href="https://github.com/ThomasFortrie/blogproject" class="btn btn-outline-info">Le
+                                répertoire GitHub</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Utilisation d'API <br> - JavaScript / jQuery</h5>
+                            <span class="badge badge-warning">JS</span>
+                            <small>Projet personnel - 2020</small>
+                            <p class="card-text">Application 'One Page' utilisant une API <a
+                                    href="https://imdb-api.com/" target="blanck">(imdb-api.com)</a> permettant la
+                                recherche
+                                d'affiches et d'images officielles de films.
+                            </p>
+                            <a target="blanck" href="https://github.com/ThomasFortrie/cineapi"
+                                class="btn btn-outline-info">Le répertoire GitHub du projet</a>
+                            <a target="blanck" href="https://thomasfortrie.github.io/cineapi/"
+                                class="btn btn-outline-success">Essayez cet Appli !</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">Thème WordPress</h5>
+                            <span class="badge badge-danger">PHP</span>
+                            <span class="badge badge-info">WordPress</span>
+                            <small>- 2020</small>
+                            <p class="card-text">Entrainement à la création d'un thème WordPress et d'en comprendre la
+                                structure et le fonctionnement</p>
+                            <a target="blanck" href="https://github.com/ThomasFortrie/centertom"
+                                class="btn btn-outline-info">Le répertoire GitHub du thème</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
         <footer>
-            <div class="networkImgDiv">
-                <div>
-                    <a href="#" target="blank">
-                        <img class="networkImg md-4" src="images/Email.png" alt="Thomas Fortrie Facebook Profil"
-                            title="Thomas Fortrie Facebook Profil">
-                    </a>
-                    <a href="https://www.linkedin.com/in/thomas-fortrie/" target="blank">
-                        <img class="networkImg md-4" src="images/linkedin-logo.png" alt="Thomas Fortrie Linkedin Profil"
-                            title="Thomas Fortrie Likedin Profil">
-                    </a>
-                </div>
-            </div>
-
+            <small>Thomas Fortrie - 2020</small>
         </footer>
     </div>
-
 </body>
 
 </html>
