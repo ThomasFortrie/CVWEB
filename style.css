@@ -159,6 +159,16 @@ LIST LIST LIST LIST LIST LIST LIST LIST LIST LIST
 }
 
 
+.reveal{
+    opacity: 0;
+    transform: translateY(+30px);
+}
+.reveal-visible{
+    opacity: 1;
+    transform: translateY(0px);
+    transition: 1s cubic-bezier(0.5, 0, 0, 1);
+}
+
 /*
 MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY 
 MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY 
