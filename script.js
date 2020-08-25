@@ -21,4 +21,6 @@ const options = {
   }
   
   const observer = new IntersectionObserver(handleIntersect, options);
-  observer.observe(document.querySelector(".reveal"))
+  document.querySelectorAll('.reveal').forEach(function(r){
+    observer.observe(r)
+  })
