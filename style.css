@@ -1,65 +1,190 @@
-#profilPhoto{
-    width: 150px;
-    border-radius: 50%;
-    border: 2px solid rgb(0, 0, 0);
-    position: absolute;
-    top: 25px;
-    right: 80px;
+@font-face {
+    font-family: "elegance";
+    src: url("fonts/Soft_Elegance.ttf");
 }
-.entete{
-    background-color: rgba(8, 0, 83, 0.137);
-}
-h1, h2, h3, h4, h5, h6, p{
-    color: rgb(24, 24, 24);
-    font-weight: bold;
-    font-family: 'Times New Roman', Times, serif;
-}
+/* @font-face{
+    font-family: "kgp";
+    src: url("font/kgp.tff");
+} */
 
-.technos .row{
-    /* margin-bottom: 10px; */
+body {
+    /* background-color: rgba(9, 0, 49, 0.918); */
+    background-image: url("images/background.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    color: antiquewhite;
+    font-family: "elegance";
 }
-
-.card-title, .jumbotron h4, .jumbotron h3{
-    font-family: 'Courier New', Courier, monospace;
+header {
+    position: sticky;
+    top: 0px;
+    z-index: 99;
+    transition: 0.5s;
 }
-.container{
-    background-color: rgba(0, 0, 0, 0.050);
-}
-.title{
-    
-}
-
-.infos a{
-    margin-right: 20px;
-}
-
-.technos{
-    background-color: rgba(0, 68, 255, 0.116);
-}
-
-.exp{
-    background-color: rgba(9, 255, 0, 0.11);
-}
-.btnInfo{
-    margin: 5px;
-}
-
-.texteOp{
-    margin-top: 10px;
-}
-footer{
-    background-color: rgb(177, 177, 177);
-    color: rgb(63, 63, 63);
-    position: fixed;
-    bottom: 0px;
-    width: 100%;
-    left: 0px;
+/* h2, h3, h4, h5, h6{
+    font-family: "kgp";
+} */
+.menu {
+    display: flex;
+    flex-direction: row-reverse;
     text-align: center;
+}
+.partMenu {
+    flex: 1 1;
+    margin-left: 5px;
+}
+.whiteTheme {
+    background-color: rgba(255, 255, 255, 0.178);
+    color: black;
+}
+.Fake {
+    flex: 3 1;
+}
+.partMenu img {
+    background-color: white;
+    width: auto;
+    height: 50px;
+    padding: 5px;
+    border-radius: 10px;
+    transition-duration: 0.8s;
+    box-shadow: 0.1em 0.1em 0.2em rgb(0, 0, 0);
+}
+.partMenu img:hover {
+    transform: translate(0px, 10px);
+    transition-duration: 0.5s;
+}
+.partMenu:hover p {
+    background-color: rgba(0, 0, 0, 0.74);
+    border-radius: 5px;
+    display: block;
+    position: relative;
+    opacity: 1;
+    text-align: center;
+    transition-duration: 0.5s;
+    top: 20px;
+    transform: translate(20px, 0px);
+}
+.textMenu {
+    display: block;
+    position: relative;
+    opacity: 0;
+    transition-duration: 0.5s;
+    top: 20px;
+    right: 20px;
+}
+
+#lfac {
+    padding: 10px;
+    background-color: rgb(43, 0, 161);
+    display: inline-block;
+    /* border: 1px solid white; */
+    border-radius: 100px 10px / 100px;
+    box-shadow: 3px 3px 5px rgb(0, 0, 0);
+    transition-duration: 0.5s;
+}
+#lfac:hover {
+    transform: translate(0px, -5px);
+    transition-duration: 0.5s;
+}
+
+#imgTom {
+    width: auto;
+    height: 250px;
+    border: 20px solid rgb(28, 1, 92);
+    border-radius: 50%;
+    box-shadow: 0px 0px 5px rgb(0, 0, 0);
+    transition-duration: 0.5s;
+}
+
+#imgTom:hover {
+    transform: translate(0px, -5px);
+    transition-duration: 0.5s;
+}
+.textIco {
+    display: inline-block;
+}
+
+/*
+LIST LIST LIST LIST LIST LIST LIST LIST LIST LIST 
+*/
+.skillsPart ul {
+    /* background-color: rgba(14, 0, 77, 0.918); */
+    /* margin: 5px; */
+    border-radius: 20px;
+}
+.skillsPart ul li {
+    display: block;
+    padding: 0.2em 0.2em 0.2em 2em;
+    *padding: 0.2em;
+    margin: 0.5em 0;
+    background: rgb(2, 73, 179);
+    color: white;
+    text-decoration: none;
+    box-shadow: inset 0.5em 0 black;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    -webkit-transition: box-shadow 1s; /* For Safari 3.1 to 6.0 */
+    transition: box-shadow 0.5s;
+}
+
+.skillsPart ul li:hover {
+    box-shadow: inset 2em 0 black;
     font-weight: bold;
 }
 
-@media (max-width: 500px){
-    #profilPhoto{
-        display: none;;
+/* CARD */
+.card:hover{
+    transform: translate(0px, 10px);
+    transition-duration: 0.5s;
+}
+.card{
+    transition-duration: 0.8s;
+}
+
+/* CONTACT */
+
+.contactPart{
+    text-align: center;
+}
+.contactPart p{
+    font-style: italic;
+}
+.contactPart img{
+    position: relative;
+    top: 5px;
+    margin-bottom: 10px;
+    background-color: white;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+
+/*
+MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY 
+MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY 
+*/
+@media (max-width: 600px) {
+    .partMenu img {
+        background-color: white;
+        width: auto;
+        height: 40px;
+        padding: 5px;
+        border-radius: 8px;
+        transition-duration: 0.8s;
+    }
+    .menu {
+        display: flex;
+        flex-direction: row-reverse;
+        text-align: left;
+    }
+    .partMenu {
+        flex: 1 1;
+        margin-left: 1px;
+    }
+    .titlePart {
+        text-align: center;
+    }
+    .textIco {
+        display: none;
     }
 }
