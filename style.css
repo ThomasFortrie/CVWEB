@@ -211,4 +211,11 @@ MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QUERY MEDIA QU
     .textIco {
         display: none;
     }
+    body{
+        background-image: url("images/background.jpg");
+        background-attachment: fixed;
+        background-position: center;
+        color: antiquewhite;
+        font-family: "elegance";
+    }
 }
